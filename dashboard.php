@@ -2,13 +2,13 @@
 include 'config.php';
 
 // Query Total Events
-$queryEvents = "SELECT COUNT(*) as total_events FROM users";
+$queryEvents = "SELECT COUNT(*) as total_events FROM myform";
 $resultEvents = $conn->query($queryEvents);
 $dataEvents   = $resultEvents->fetch_assoc();
 $totalEvents  = $dataEvents['total_events'];
 
 // Query Total Users
-$queryUsers = "SELECT COUNT(*) as total_users FROM users";
+$queryUsers = "SELECT message as total_users FROM myform";
 $resultUsers = $conn->query($queryUsers);
 $dataUsers   = $resultUsers->fetch_assoc();
 $totalUsers  = $dataUsers['total_users'];
@@ -28,7 +28,7 @@ $totalUsers  = $dataUsers['total_users'];
         <div class="widget">
             <h2>Overview</h2>
             <p>Total Events: <span id="totalEvents"><?php echo $totalEvents; ?></span></p>
-            <p>Total Users: <span id="totalUsers"><?php echo $totalUsers; ?></span></p>
+            <p>message Users: <span id="totalUsers"><?php echo $totalUsers; ?></span></p>
         </div>
     </div>
     
