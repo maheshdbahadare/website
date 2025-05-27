@@ -5,7 +5,7 @@ body {
            background-color: #f4f4f9;
        }
        header {
-           background-color: #0044cc;
+           background:linear-gradient(to right, #55cc00, #002a80);
            color: white;
            text-align: center;
            padding: 1rem 0;
@@ -13,8 +13,8 @@ body {
        nav {
            display: flex;
            justify-content: center;
-           background-color: #0044cc;
-           padding: 0.5rem;
+           background:radial-gradient(circle, #00ff0d, #3700ff);
+           padding: 0.5rem 0;
        }
        nav a {
            color: white;
@@ -28,6 +28,7 @@ body {
        section {
            padding: 2rem;
            text-align: center;
+           background:linear-gradient(to right, #fe0612, #e516f4);
        }
        .features {
            display: flex;
